@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragment.addnewpayment.AddNewPaymentFragment">
+
+    <androidx.core.widget.NestedScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <!--客人-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                        android:id="@+id/suggest_customer_textView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="找用戶名稱"
+                        android:completionThreshold="1"
+                        app:layout_constraintEnd_toStartOf="@id/spinner_customer_usernames"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+                <Spinner
+                        android:id="@+id/spinner_customer_usernames"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintTop_toTopOf="@id/suggest_customer_textView"
+                        app:layout_constraintStart_toEndOf="@id/suggest_customer_textView"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toBottomOf="@id/suggest_customer_textView"
+                        />
+
+                <Button
+                        android:id="@+id/addCustomer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/spinner_customer_usernames"
+                        android:text="確定客人" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!--設計師-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <Spinner
+                        android:id="@+id/spinner_barber_usernames"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/addBarber"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                <Button
+                        android:id="@+id/addBarber"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="確定設計師"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/spinner_barber_usernames" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <!--產品-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <Spinner
+                        android:id="@+id/spinner_product_usernames"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/addProduct"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        />
+
+                <Button
+                        android:id="@+id/addProduct"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="新增產品"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/spinner_product_usernames" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <!--服務-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <Spinner
+                        android:id="@+id/spinner_service_usernames"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/addService"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        />
+
+                <Button
+                        android:id="@+id/addService"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/spinner_service_usernames"
+                        android:text="新增服務內容" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

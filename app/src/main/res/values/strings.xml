@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">RebornProject</string>
+    <string name="title_home">主頁</string>
+    <string name="title_customer_list">客人列表</string>
+    <string name="title_add_payment">新增消費</string>
+    <string name="title_search_user">查詢客人資料</string>
+    <string name="title_user_detail">客人資訊</string>
+    <string name="project_store_name">Reborn 今天是剪髮的好日子</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>

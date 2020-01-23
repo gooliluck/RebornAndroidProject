@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/nav_list_user"
+        app:startDestination="@id/listUsers">
+
+    <fragment
+            android:id="@+id/listUsers"
+            android:name="com.gooliluck.rebornproject.fragment.listuser.ListUsers"
+            android:label="list_users_fragment"
+            tools:layout="@layout/list_users_fragment" />
+</navigation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/navigation_add_payment"
+        app:startDestination="@id/addNewPaymentFragment">
+
+    <fragment
+            android:id="@+id/addNewPaymentFragment"
+            android:name="com.gooliluck.rebornproject.fragment.addnewpayment.AddNewPaymentFragment"
+            android:label="add_new_payment_fragment"
+            tools:layout="@layout/add_new_payment_fragment" />
+</navigation>
